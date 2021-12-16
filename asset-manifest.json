@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Pokedex/static/css/main.c647d7b5.chunk.css",
+    "main.js": "/Pokedex/static/js/main.bbc771b9.chunk.js",
+    "main.js.map": "/Pokedex/static/js/main.bbc771b9.chunk.js.map",
+    "runtime-main.js": "/Pokedex/static/js/runtime-main.b5c01429.js",
+    "runtime-main.js.map": "/Pokedex/static/js/runtime-main.b5c01429.js.map",
+    "static/css/2.6d7c7915.chunk.css": "/Pokedex/static/css/2.6d7c7915.chunk.css",
+    "static/js/2.01a6af22.chunk.js": "/Pokedex/static/js/2.01a6af22.chunk.js",
+    "static/js/2.01a6af22.chunk.js.map": "/Pokedex/static/js/2.01a6af22.chunk.js.map",
+    "static/js/3.1076ae1f.chunk.js": "/Pokedex/static/js/3.1076ae1f.chunk.js",
+    "static/js/3.1076ae1f.chunk.js.map": "/Pokedex/static/js/3.1076ae1f.chunk.js.map",
+    "index.html": "/Pokedex/index.html",
+    "static/css/2.6d7c7915.chunk.css.map": "/Pokedex/static/css/2.6d7c7915.chunk.css.map",
+    "static/css/main.c647d7b5.chunk.css.map": "/Pokedex/static/css/main.c647d7b5.chunk.css.map",
+    "static/js/2.01a6af22.chunk.js.LICENSE.txt": "/Pokedex/static/js/2.01a6af22.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Pokedex/static/media/pokemon_solid-webfont.a5b682da.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5c01429.js",
+    "static/css/2.6d7c7915.chunk.css",
+    "static/js/2.01a6af22.chunk.js",
+    "static/css/main.c647d7b5.chunk.css",
+    "static/js/main.bbc771b9.chunk.js"
+  ]
+}
