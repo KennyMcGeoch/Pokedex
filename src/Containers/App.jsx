@@ -25,10 +25,7 @@ componentDidMount() {
         for (let i = 0; i < resp.types.length; i++){
             types = types + resp.types[i].type.name.charAt(0).toUpperCase() + resp.types[i].type.name.slice(1) + " ";
         }
-        // console.log(resp.name, resp.id, types
             this.setState((prevState)=> ({ pokemon: [ ...prevState.pokemon, [resp.id, resp.name, types]]}
-            // resp.types[0].type.name, 
-            // resp.types[1].type.name
         ))})
         }
  

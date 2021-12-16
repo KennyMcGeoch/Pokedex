@@ -9,7 +9,6 @@ const Card = ({name, types, id}) => {
         <h2>{name.charAt(0).toUpperCase() + name.slice(1)}</h2>
         <h2># {id}</h2>
         <h3>{types}</h3>
-        {/* <p>{email}</p> */}
     </div>
 </div>
     );
