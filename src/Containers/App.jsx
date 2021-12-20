@@ -17,15 +17,13 @@ class App extends Component  {
     
 componentDidMount() {
     for (let i = 1; i < 152; i++) { 
-        let url = 'https://pokeapi.co/api/v2/pokemon/' + i;
+        let url = 'https://pokeapi.co/api/v2/pokemon/' + i; // Ideally it would be preferable to do a single API call to
+    // 'https://pokeapi.co/api/v2/pokemon/?limit=151' but unfortunately it only gives the name and then a url for a further API
+    // call hence why 151 API calls are done. Normally it would be best to get the API modified so it can all be done in a single call
     fetch(url)
     .then(response=> response.json())
     .then(resp=> {
-        let types = "";
-        for (let i = 0; i < resp.types.length; i++){
-            types = types + resp.types[i].type.name.charAt(0).toUpperCase() + resp.types[i].type.name.slice(1) + " ";
-        }
-            this.setState((prevState)=> ({ pokemon: [ ...prevState.pokemon, [resp.id, resp.name, types]]}
+            this.setState((prevState)=> ({ pokemon: [ ...prevState.pokemon, resp]}
         ))})
         }
  
@@ -40,9 +38,9 @@ onSearchChange = (event) => {
 
     render() {
     const { pokemon, searchfield } = this.state;
-    const sortedPokemon = pokemon.sort(function(a, b){return a[0] - b[0]});
+    const sortedPokemon = pokemon.sort(function(a, b){return a.id - b.id});
     const filteredPokemon = sortedPokemon.filter(pokemon =>{
-       return pokemon[1].toLowerCase().includes(searchfield.toLowerCase())
+       return pokemon.name.toLowerCase().includes(searchfield.toLowerCase())
     })
     return( 
     <div className="tc">
